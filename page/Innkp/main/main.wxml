@@ -1,0 +1,10 @@
+<view class="container">
+  <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+    <view clase="main-item" bindtap="navigateTo">
+      <image id="{{item.id}}" class="image-cover" src="{{item.cover}}" />
+      <view class="video-name" >
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </block>
+</view>
