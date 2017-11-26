@@ -7,6 +7,7 @@
 
 var host = "14592619.qcloud.la"
 var myhost ="http://houxiaoran.com/vedio/list?page=1&count=3&id=3"
+var innkp_host = "118.89.192.65：8080"
 var config = {
 
     // 下面的地址配合云端 Server 工作

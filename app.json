@@ -1,8 +1,8 @@
 {
   "pages": [
+    "page/Innkp/mine-page/mine-page",
     "page/Innkp/main/main",
     "page/Innkp/video-page/video-page",
-    "page/Innkp/mine-page/mine-page",
     "page/component/index",
     "page/component/pages/view/view",
     "page/component/pages/scroll-view/scroll-view",

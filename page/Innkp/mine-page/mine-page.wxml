@@ -1,11 +1,12 @@
 <!--page/Innkp/mine-page/mine-page.wxml-->
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="image-cover">
+    <image style="width: 100%; " src="{{cover1}}"></image>
+    <text class="box1" bindtap="showInvitationDialog">邀请卡>></text>
+  </view>
+  <view class="line1" >
+    <text>详细规则>></text>
+    <text>排行榜>></text>
   </view>
 </view>
