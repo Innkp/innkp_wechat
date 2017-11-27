@@ -1,10 +1,11 @@
 //index.js
 //获取应用实例
 const app = getApp()
-const requestUrl = "http://118.89.192.65:8080/api/videos"
+const requestUrl = "http://118.89.192.65:8080/api/corps"
 const duration = 2000
 Page({
   data: {
+    list: [],
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -59,14 +60,9 @@ Page({
       success: function (result) {
         var data = result.data;
         self.setData({
-          myjson: data
+          list: data.list
         })
-        wx.showToast({
-          title: '请求成功',
-          icon: 'success',
-          mask: true,
-          duration: duration
-        })
+
         self.setData({
           loading: false
         })
@@ -95,5 +91,14 @@ Page({
       showCancel: true,
       confirmText: "确定"
     })
+  },
+  gotoRulePage: function () {
+    wx.navigateTo({ url: '../rule/rule' })
+  },
+  gotoRankingPage: function () {
+    wx.navigateTo({ url: '../ranking/ranking' })
+  },
+  gotoCorpsPage: function () {
+    wx.navigateTo({ url: '../corps/corps' })
   },
 })

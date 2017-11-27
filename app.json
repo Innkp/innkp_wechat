@@ -62,7 +62,10 @@
     "page/API/pages/get-location/get-location",
     "page/API/pages/open-location/open-location",
     "page/API/pages/choose-location/choose-location",
-    "page/API/pages/storage/storage"
+    "page/API/pages/storage/storage",
+    "page/Innkp/rule/rule",
+    "page/Innkp/ranking/ranking",
+    "page/Innkp/corps/corps"
   ],
   "window": {
     "navigationBarTextStyle": "black",

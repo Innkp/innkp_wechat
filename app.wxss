@@ -1,3 +1,15 @@
+/* page */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+
+
+
+
 /* reset */
 page {
   background-color: #F8F8F8;
@@ -24,14 +36,8 @@ form{
   text-align: center;
 }
 
-/* page */
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  font-size: 32rpx;
-  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
-}
+
+
 .page-head{
   padding: 60rpx 50rpx 80rpx;
   text-align: center;
