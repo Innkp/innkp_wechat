@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 32rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  padding: 10rpx;
+}
+
+.form {
+  border: 2rpx solid #d9d9d9;
+  border-radius: 12rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 20rps;
+  min-height: 80rpx;
+  font-size: 32rpx;
+  align-items: center;
+}
+
+.form-btn {
+  width: 60%;
+  margin: 20rpx;
+  align-self: center
+}

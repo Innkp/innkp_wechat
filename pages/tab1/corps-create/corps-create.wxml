@@ -1,0 +1,22 @@
+<view class="page">
+  <form class="form" catchsubmit="formSubmit" catchreset="formReset">
+    <view class="form-column">
+      <text>船长姓名：</text>
+      <input name="input" placeholder="请输入船长姓名" name="captain" />
+    </view>
+    <view class="form-column">
+      <text>海盗船名字：</text>
+      <input name="input" placeholder="请输入海盗船名字" name="name" />
+    </view>
+    <view class="form-column">
+      <text>公告：</text>
+      <input name="input" placeholder="请输入公告" name="label" />
+    </view>
+    <view class="form-column">
+      <text>详细介绍：</text>
+      <textarea auto-height name="details" />
+    </view>
+    <button class="form-btn" type="primary" formType="submit">Submit</button>
+    <button class="form-btn" formType="reset">Reset</button>
+  </form>
+</view>

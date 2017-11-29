@@ -1,0 +1,29 @@
+<!--pages/tab1/tab1/tab1.wxml-->
+<view class="page">
+  <view class="image-cover">
+    <image style="width: 100%; " src="{{cover1}}"></image>
+  </view>
+  <view class="line1">
+    <text bindtap="gotoRulePage">详细规则>></text>
+    <text bindtap="gotoRankingPage">排行榜>></text>
+  </view>
+   <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+    <view class="crops-box">
+      <view class='crops-box-left'>
+        <icon class="icon-box-img" type="success" size="60"></icon>
+        <text class="text3">{{item.name}}</text>
+      </view>
+      <view class='crops-box-middle'>
+        <text class="text1">船长:{{item.captain}}</text>
+        <text class="text1">公告:{{item.label}}</text>
+        <button class="box2" type="warn">加入海盗团</button>
+      </view>
+      <view class='crops-box-right'>
+        <text class="text2">{{item.num}} 人</text>
+        <text class="text2" bindtap="gotoCorpsPage" id="{{item.id}}">详情>></text>
+      </view>
+    </view>
+  </block>
+  <button type="primary" bindtap="gotoCreateCorpsPage">创建海盗团</button>
+  <button class="box1" type="warn" bindtap="showInvitationDialog">邀请卡</button>
+</view>
