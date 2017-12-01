@@ -1,2 +1,9 @@
 <!--pages/tab1/corps/corps.wxml-->
-<text>pages/tab1/corps/corps.wxml</text>
+<view class="page">
+  <text>海盗船名字：{{list[0].name}}</text>
+  <text>海盗船长：{{list[0].captain}}</text>
+  <text>公告：{{list[0].label}}</text>
+  <text>当前人数：{{list[0].num}} 人</text>
+  <text>创建日期：{{list[0].createdDate}}</text>
+  <text>海盗船简介：{{list[0].details}}</text>
+</view>

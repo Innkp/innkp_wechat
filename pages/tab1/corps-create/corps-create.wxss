@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-size: 32rpx;
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
-  padding: 10rpx;
+  margin-bottom: 20rpx;
 }
 
 .form {
@@ -28,5 +27,41 @@
 .form-btn {
   width: 60%;
   margin: 20rpx;
-  align-self: center
+  align-self: center;
 }
+.input-cells {
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: #fff;
+  line-height: 1.41176471;
+  font-size: 17px;
+  padding-left: 20rpx;
+}
+
+.input-cells:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.input-cells:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+
+.text-fixed{
+  padding: 20rpx;
+}
+

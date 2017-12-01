@@ -33,6 +33,7 @@
 
 .crops-box {
   display: flex;
+  /* flex:1; */
   margin: 15rpx;
   padding: 15rpx;
   min-height: 300rpx;
@@ -54,6 +55,8 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  min-height: 270rpx;
+  justify-content: space-between;
 }
 
 .crops-box-right {

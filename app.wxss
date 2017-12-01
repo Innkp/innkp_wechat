@@ -8,3 +8,8 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+@import './weui.wxss';
+@import './form.wxss';
+@import './color.wxss';
+@import './property.wxss';
+@import './font.wxss';

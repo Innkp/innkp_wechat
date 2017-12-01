@@ -1,8 +1,31 @@
 <view class="page">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <text class='text-fixed'>船长：{{nickName}}</text>
+
+    <view class="input-cells">
+      <input class="weui-input" auto-focus placeholder="请输入海盗船名字" confirm-type="next" />
+    </view>
+
+    <view class="weui-cells__title">2到16个字符</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="请输入海盗船名字" confirm-type="next" />
+      </view>
+    </view>
+    <view class="weui-cells__title">2到16个字符</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="请输入海盗船名字" confirm-type="next" />
+      </view>
+    </view>
+    <view class="weui-cells__title">2到16个字符</view>
+  </form>
+</view>
+<view class="page">
   <form class="form" catchsubmit="formSubmit" catchreset="formReset">
     <view class="form-column">
-      <text>船长姓名：</text>
-      <input name="input" placeholder="请输入船长姓名" name="captain" />
+      <text>船长：{{nickName}}</text>
+      <input class='weui-cell_input' name="input" placeholder="请输入船长姓名" name="captain" />
     </view>
     <view class="form-column">
       <text>海盗船名字：</text>
@@ -17,6 +40,6 @@
       <textarea auto-height name="details" />
     </view>
     <button class="form-btn" type="primary" formType="submit">Submit</button>
-    <button class="form-btn" formType="reset">Reset</button>
+    <!-- <button class="form-btn" formType="reset">Reset</button> -->
   </form>
 </view>

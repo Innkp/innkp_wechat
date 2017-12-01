@@ -1,1 +1,7 @@
-/* pages/tab1/corps/corps.wxss */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}

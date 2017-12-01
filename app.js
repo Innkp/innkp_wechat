@@ -1,4 +1,5 @@
 //app.js
+import wxValidate from 'utils/wxValidate'
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -35,5 +36,6 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+  wxValidate: (rules, messages) => new wxValidate(rules, messages)
 })
