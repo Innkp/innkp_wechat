@@ -1,6 +1,7 @@
 Page({
   data: { nickName: '' },
   formSubmit: function (e) {
+    console.log(e.detail.value)
     wx.showModal({
       content: "确定要创建吗？",
       showCancel: true,
@@ -10,7 +11,7 @@ Page({
           var that = this;
           var formData = e.detail.value;
           wx.request({
-            url: 'http://118.89.192.65:8080/api/createcorps',
+            url: 'https://www.innkp.com/api/createcorps',
             data: formData,
             header: {
               'Content-Type': 'application/x-www-form-urlencoded'

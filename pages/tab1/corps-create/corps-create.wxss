@@ -63,5 +63,11 @@
 
 .text-fixed{
   padding: 20rpx;
+
+}
+.input-cells-textarea{
+  min-height: 400rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
 }
 

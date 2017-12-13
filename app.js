@@ -1,5 +1,6 @@
 //app.js
 import wxValidate from 'utils/wxValidate'
+var myhost= "https://www.innkp.com/"
 App({
   onLaunch: function () {
     // 展示本地存储能力

@@ -1,12 +1,11 @@
-
 const app = getApp()
-const requestUrl = "http://118.89.192.65:8080/api/corpss"
-const joinCorpsUrl = "http://118.89.192.65:8080/api/joincorps?id="
+const requestUrl = "https://www.innkp.com/api/corpss"
+const joinCorpsUrl = "https://www.innkp.com/api/joincorps?id="
 const duration = 2000
 Page({
   data: {
     list: [],
-    cover1: "http://118.89.192.65:8080/cover1.jpg"
+    cover1: "https://www.innkp.com/cover1.jpg"
   },
   onShow: function () {
     this.makeRequest()
